@@ -1,6 +1,9 @@
 # Api
 
 
+```kill -9 $(lsof -t -i:8080)``` // kill a process running at port 
+
+
 //install golang
 ```
 wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
@@ -15,8 +18,8 @@ check go version
 
 ``` go version```
 
-
-Anywhere mkdir Api
+----------------------------------------------------------------------------------------------------------------------
+Anywhere ```mkdir Api```
 
 
 cd Api
@@ -34,14 +37,15 @@ write code with dependency
 
 
 
-1 .```go mod tidy``` (install all dependencies and creates go.sum)
+1.```go mod tidy``` (install all dependencies and creates go.sum)
 
 
 
-2 .```go mod vendor``` (shows all dependencied)
+2.```go mod vendor``` (shows all dependencied)
 
 
-to download specific verison do ```go get``` automatically install that version and update in go mod
+to download specific verison do ```go get``` automatically install that version and update in go mod  example -```go get github.com/spf13/cast```
+
 
 now packages will also be visible like ```"../config"```
 
