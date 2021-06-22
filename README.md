@@ -34,13 +34,15 @@ write code with dependency
 
 
 
-```go mod tidy``` (install all dependencies and creates go.sum)
+1 .```go mod tidy``` (install all dependencies and creates go.sum)
 
 
 
-```go mod vendor``` (shows all dependencied)
+2 .```go mod vendor``` (shows all dependencied)
 
 
 to download specific verison do ```go get``` automatically install that version and update in go mod
 
 now packages will also be visible like ```"../config"```
+
+for every new local or git hub package run 1 &  2 then the package will be visible
